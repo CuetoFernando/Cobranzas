@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Gestion Cobranzas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4e44e9be-d626-4578-9634-ad6f40dd1788"
+  }
+}

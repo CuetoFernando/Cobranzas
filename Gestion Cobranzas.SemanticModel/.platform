@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Gestion Cobranzas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4913ed52-489c-4803-b86c-a4e6a08ba427"
+  }
+}

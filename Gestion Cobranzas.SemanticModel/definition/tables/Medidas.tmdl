@@ -1,0 +1,32 @@
+table Medidas
+	lineageTag: bdeddae4-2d99-4a15-86a7-bff7a2b896d2
+
+	measure Suma_Total = SUM(Comp_Deuda[Total_aj])
+		lineageTag: 3de08698-b17c-48ea-ae24-ee6a11cdd5c5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Total_Neto_Pagos =
+			
+			[Suma_Total]-sum(Pagos_sin_Imputar[Pend_Imputacion])
+		lineageTag: 355f2a6d-6b97-4e5f-b05b-37f5c6fc5af9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: ab2a73a7-e19f-4e00-b47f-9dc07aed1ad0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 9590ceafcf2f4c99aefbbeff3d4ccf55
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

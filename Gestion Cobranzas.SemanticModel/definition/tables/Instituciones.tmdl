@@ -1,0 +1,58 @@
+table Instituciones
+	lineageTag: 91a17082-72bb-4762-8e99-94615250520b
+
+	column CODIGO
+		dataType: int64
+		formatString: 0
+		lineageTag: c19ad4cb-c590-47f8-a93d-f851f75afdc5
+		summarizeBy: none
+		sourceColumn: CODIGO
+
+		annotation SummarizationSetBy = User
+
+	column DESCC
+		dataType: string
+		lineageTag: c3d803e2-82e6-4a21-9a05-707fe4cdc2f6
+		summarizeBy: none
+		sourceColumn: DESCC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCA
+		dataType: string
+		lineageTag: fac66e38-3800-4fd9-8969-6c1ee21c0350
+		summarizeBy: none
+		sourceColumn: DESCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pzo_Pago.Plazos '
+		dataType: int64
+		formatString: 0
+		lineageTag: c35c15f0-bc38-4b4c-a1c4-ce47c11cca8f
+		summarizeBy: sum
+		sourceColumn: "Pzo_Pago.Plazos "
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Instituciones = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("192.168.0.4"),
+				    BddGH = Origen{[Name="BddGH"]}[Data],
+				    dbo_ABMD_Instituciones = BddGH{[Schema="dbo",Item="ABMD_Instituciones"]}[Data],
+				    #"Otras columnas quitadas" = Table.SelectColumns(dbo_ABMD_Instituciones,{"CODIGO", "DESCC", "DESCA"}),
+				    #"Filas ordenadas" = Table.Sort(#"Otras columnas quitadas",{{"CODIGO", Order.Ascending}}),
+				    #"Texto recortado" = Table.TransformColumns(#"Filas ordenadas",{{"DESCA", Text.Trim, type text}}),
+				    #"Filas filtradas" = Table.SelectRows(#"Texto recortado", each true),
+				    #"Duplicados quitados" = Table.Distinct(#"Filas filtradas", {"DESCA"}),
+				    #"Consultas combinadas" = Table.NestedJoin(#"Duplicados quitados", {"CODIGO"}, Pzo_Pago, {"Cod"}, "Pzo_Pago", JoinKind.LeftOuter),
+				    #"Se expandió Pzo_Pago" = Table.ExpandTableColumn(#"Consultas combinadas", "Pzo_Pago", {"Plazos "}, {"Pzo_Pago.Plazos "})
+				in
+				    #"Se expandió Pzo_Pago"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,14 @@
+expression Pzo_Pago =
+		let
+		    Origen = Excel.Workbook(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Prestatarias - Plazo de Pago.xlsx"), null, true),
+		    data8_Sheet = Origen{[Item="data8",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(data8_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Cod", Int64.Type}, {"Abreviatura", type text}, {"Tipo", type text}, {"Detalle", type text}, {"Plazos ", Int64.Type}})
+		in
+		    #"Tipo cambiado"
+	lineageTag: 7fb23136-bd0a-4888-8740-bd4eda181264
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

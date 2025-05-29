@@ -1,0 +1,25 @@
+relationship 2c5a875b-7365-475e-ab76-ce32f6e804a0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Comp_Deuda.'Fecha emisión'
+	toColumn: LocalDateTable_11e5f011-a4fb-4adb-a55f-267d5ec7e984.Date
+
+relationship 7554d5e2-592a-4333-9291-910c14839124
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Comp_Deuda.Vto_Comp
+	toColumn: LocalDateTable_c104a9c0-8782-4b31-adb5-423b8ce19924.Date
+
+relationship 7cdfa7a3-1750-4223-8bb8-a01652a57986
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Pagos_sin_Imputar.Fecha
+	toColumn: LocalDateTable_2d4ebe15-f403-4525-a331-5e62b78ca1be.Date
+
+relationship 590317ef-8268-6185-59c2-ee17d020ed5b
+	crossFilteringBehavior: bothDirections
+	fromColumn: Comp_Deuda.'Cod Institucion'
+	toColumn: Instituciones.CODIGO
+
+relationship 1ed23d34-59a2-b7aa-c836-5c4f834d6350
+	crossFilteringBehavior: bothDirections
+	fromColumn: Pagos_sin_Imputar.Cod_Inst
+	toColumn: Instituciones.CODIGO
+

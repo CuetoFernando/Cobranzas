@@ -1,0 +1,201 @@
+table Comp_Deuda
+	lineageTag: 550b36ae-2ce8-43f4-8b6c-196966655384
+
+	column 'Cod Institucion'
+		dataType: int64
+		formatString: 0
+		lineageTag: 98f51def-8ef2-47d8-9978-614401980161
+		summarizeBy: none
+		sourceColumn: Cod Institucion
+
+		annotation SummarizationSetBy = User
+
+	column Institucion
+		dataType: string
+		lineageTag: 74cdde74-c723-4fd8-9bdc-e309a8f959b4
+		summarizeBy: none
+		sourceColumn: Institucion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comprobante
+		dataType: string
+		lineageTag: e76f377a-0778-4133-b625-222fdf817b49
+		summarizeBy: none
+		sourceColumn: Comprobante
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comp Asociado'
+		dataType: string
+		lineageTag: adb37c6b-523a-4456-9a68-6f0a4e52184b
+		summarizeBy: none
+		sourceColumn: Comp Asociado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha emisión'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 64e6740b-c1a3-4db2-8542-22825f79a23a
+		summarizeBy: none
+		sourceColumn: Fecha emisión
+
+		variation Variación
+			isDefault
+			relationship: 2c5a875b-7365-475e-ab76-ce32f6e804a0
+			defaultHierarchy: LocalDateTable_11e5f011-a4fb-4adb-a55f-267d5ec7e984.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Hon
+		dataType: double
+		lineageTag: ab4d3020-a4a4-42da-9e73-0fc68761f087
+		summarizeBy: sum
+		sourceColumn: Hon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gastos
+		dataType: double
+		lineageTag: dc909a83-56d7-4209-a227-8fd8bd2d9c0f
+		summarizeBy: sum
+		sourceColumn: Gastos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Impuestos
+		dataType: double
+		lineageTag: e6bfedb3-435c-4a1e-8ba3-a34d3943f204
+		summarizeBy: sum
+		sourceColumn: Impuestos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: dd4f8d6c-b1ef-4775-8ba1-74ab02405750
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total_aj
+		dataType: double
+		lineageTag: 51c63ad5-d20c-4fc0-bafd-19d575e18dca
+		summarizeBy: sum
+		sourceColumn: Total_aj
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Plazo_Vancimiento =
+			
+			IF(RELATED(Instituciones[Pzo_Pago.Plazos ])<>BLANK(),RELATED(Instituciones[Pzo_Pago.Plazos ]), 45)
+		formatString: 0
+		lineageTag: 62cf0006-7aec-42a4-a975-7c8bb99dbe22
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vto_Comp =
+			
+			CALCULATE(
+			    MIN(Comp_Deuda[Fecha emisión]),
+			    ALLEXCEPT(Comp_Deuda, Comp_Deuda[Comprobante])
+			)+Comp_Deuda[Plazo_Vancimiento]+5
+		formatString: Short Date
+		lineageTag: 231fc54f-b1f2-4cc9-a978-4bba6e0cdc65
+		summarizeBy: none
+
+		variation Variación
+			isDefault
+			relationship: 7554d5e2-592a-4333-9291-910c14839124
+			defaultHierarchy: LocalDateTable_c104a9c0-8782-4b31-adb5-423b8ce19924.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dias_Vdo =
+			
+			IF ((TODAY()-Comp_Deuda[Vto_Comp])<0, "No Vencido", format((TODAY()-Comp_Deuda[Vto_Comp]), "general number"))
+		dataType: string
+		lineageTag: 89ecd0f2-d0cf-4933-9cf1-f8d21c0b90fe
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sin_Imputaciones =
+			
+			IF(CALCULATE(COUNTROWS(Comp_Deuda), ALLEXCEPT(Comp_Deuda, Comp_Deuda[Comprobante]))>1, "Con Movimientos", "Sin Movimientios")
+		lineageTag: 856bb4be-9179-413d-bcc0-f6015d1b53a9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Comp_Deuda = m
+		mode: import
+		source = ```
+				let
+				    // 1. Cargar archivo
+				    Origen = Csv.Document(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Comp_Deuda\COMPOSICIÓN DE DEUDA DE INSTITUCIONES20250521091807.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Filas filtradas" = Table.SelectRows(Origen, each ([Column1] <> "" and [Column1] <> "-------------------------------------------------------------------------------------------------------")),
+				 
+				    TablaIndex = Table.AddIndexColumn(#"Filas filtradas", "Index", 0, 1, Int64.Type),
+				
+				    // 4. Detectar instituciones
+				    AgregarInstitucion = Table.AddColumn(TablaIndex, "Cod Institucion", each if (Text.StartsWith([Column1], "FACT") or Text.StartsWith([Column1], "ORIG"))  then Text.Middle([Column1], 5, Text.PositionOfAny(Text.Middle([Column1], 5), {" ", "("})) else null),
+				    AgregarNombre = Table.AddColumn(AgregarInstitucion, "Institucion", each if Text.StartsWith([Column1], "FACT") then Text.BetweenDelimiters([Column1], "(", ")") else null),
+				    LlenarInstitucion = Table.FillDown(AgregarNombre, {"Cod Institucion", "Institucion"}),
+				    // 5. Filtrar líneas con comprobantes o movimientos asociados
+				    FiltrarLineas = Table.SelectRows(LlenarInstitucion, each 
+				        Text.StartsWith(Text.Trim([Column1]), "B ") or 
+				        Text.StartsWith(Text.Trim([Column1]), "A ") or 
+				        Text.StartsWith(Text.Trim([Column1]), "N/C") or 
+				        Text.StartsWith(Text.Trim([Column1]), "N/D") or 
+				        Text.StartsWith(Text.Trim([Column1]), "PAGO") or 
+				        Text.StartsWith(Text.Trim([Column1]), "AJUSTE") or 
+				        Text.StartsWith(Text.Trim([Column1]), "DEVOLUCION")
+				    ),
+				    // 6. Marcar comprobantes principales
+				    MarcarPrincipal = Table.AddColumn(FiltrarLineas, "EsPrincipal", each Text.StartsWith(Text.Trim([Column1]), "B ") or Text.StartsWith(Text.Trim([Column1]), "A ")),
+				
+				    // 7. Extraer comprobante principal
+				    ExtraerComp = Table.AddColumn(MarcarPrincipal, "Comprobante", each if [EsPrincipal] then Text.Start(Text.Trim([Column1]), 24) else null),
+				    RellenarComp = Table.FillDown(ExtraerComp, {"Comprobante"}),
+				    // 8. Extraer asociado
+				    Asociado = Table.AddColumn(RellenarComp, "Comp Asociado", each if [EsPrincipal] then "" else Text.Start(Text.Trim([Column1]), 22)),
+				    // 9. Extraer campos
+				    Fecha = Table.AddColumn(Asociado, "Fecha emisión", each Text.Trim(Text.Middle([Column1], Text.Length([Column1]) - 73, 10))),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Fecha,{{"Fecha emisión", type date}}),
+				    Hon = Table.AddColumn(#"Tipo cambiado", "Hon", each Text.Trim(Text.Middle([Column1], Text.Length([Column1]) - 63, 13))),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(Hon,{{"Hon", type number}}),
+				    Gastos = Table.AddColumn(#"Tipo cambiado1", "Gastos", each Text.Trim(Text.Middle([Column1], Text.Length([Column1]) - 50, 13))),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(Gastos,{{"Gastos", type number}}),
+				    Impuestos = Table.AddColumn(#"Tipo cambiado2", "Impuestos", each Text.Trim(Text.Middle([Column1], Text.Length([Column1]) - 37, 12))),
+				    #"Tipo cambiado3" = Table.TransformColumnTypes(Impuestos,{{"Impuestos", type number}}),
+				    Total = Table.AddColumn(#"Tipo cambiado3", "Total", each Text.Trim(Text.Middle([Column1], Text.Length([Column1]) - 26, 13))),
+				    #"Tipo cambiado4" = Table.TransformColumnTypes(Total,{{"Total", type number}, {"Cod Institucion", Int64.Type}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado4",{"Column1", "Index", "EsPrincipal"}),
+				    #"Personalizada agregada" = Table.AddColumn(#"Columnas quitadas", "Total_aj", each if [Total]>0 and Text.StartsWith([Comp Asociado], "N/C") then [Total]*-1 else 
+				if [Total]>0 and Text.StartsWith([Comp Asociado], "PAGO") then [Total]*-1 else[Total]),
+				    #"Tipo cambiado5" = Table.TransformColumnTypes(#"Personalizada agregada",{{"Total_aj", type number}})
+				in
+				    #"Tipo cambiado5"
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

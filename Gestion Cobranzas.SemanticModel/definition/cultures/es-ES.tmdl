@@ -1,0 +1,3484 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "pagos_sin_imputar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pagos sin imputar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pago sin imputar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Pagos_sin_Imputar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.recibo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Recibo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recibo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.fecha.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.fecha.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.fecha.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.fecha.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.institucion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Institucion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "institucion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.rec_original": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Rec_Original"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rec original": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rec_Original": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "original": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "novel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "singular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "special": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "initial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "primary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "prime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "rec archetype": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "rec exemplar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "rec template": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.imputado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Imputado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "imputado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.pend_imputacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Pend_Imputacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pend imputacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Pend_Imputacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar.cod_inst": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pagos_sin_Imputar",
+			          "ConceptualProperty": "Cod_Inst"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod inst": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cod_Inst": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comp deuda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Comp_Deuda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.cod_institucion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Cod Institucion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod institucion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.institucion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Institucion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "institucion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.comprobante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Comprobante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comprobante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.comp_asociado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Comp Asociado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comp asociado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.fecha_emisión": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Fecha emisión"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha emisión": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Fecha emisión",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.fecha_emisión.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Fecha emisión",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha emisión año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.fecha_emisión.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Fecha emisión",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha emisión trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.fecha_emisión.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Fecha emisión",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha emisión me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.fecha_emisión.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Fecha emisión",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha emisión día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.hon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Hon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hon": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.gasto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Gastos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.impuesto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Impuestos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "impuesto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.total_aj": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Total_aj"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total aj": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_aj": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate aj": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall aj": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.plazo_vancimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Plazo_Vancimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "plazo vancimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Plazo_Vancimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.vto_comp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Vto_Comp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vto comp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Vto_Comp": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Vto_Comp",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.vto_comp.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Vto_Comp",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vto comp año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.vto_comp.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Vto_Comp",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vto comp trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.vto_comp.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Vto_Comp",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vto comp me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.vto_comp.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "VariationSource": "Vto_Comp",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vto comp día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.dias_vdo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Dias_Vdo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias vdo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dias_Vdo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "comp_deuda.sin_imputacione": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Comp_Deuda",
+			          "ConceptualProperty": "Sin_Imputaciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sin imputacione": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sin_Imputaciones": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.suma_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Suma_Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "suma total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Suma_Total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "suma aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "suma overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Importe": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_neto_pagos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total_Neto_Pagos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total neto pagos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Neto_Pagos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate neto pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall neto pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "institucione": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Instituciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "institucione": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "institucione.codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Instituciones",
+			          "ConceptualProperty": "CODIGO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "institucione.descc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Instituciones",
+			          "ConceptualProperty": "DESCC"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "institucione.desca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Instituciones",
+			          "ConceptualProperty": "DESCA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "institucione.Pzo_Pago_plazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Instituciones",
+			          "ConceptualProperty": "Pzo_Pago.Plazos "
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Pzo_Pago.plazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Pzo_Pago.Plazos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "pagos_sin_imputar_is_expensive": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.imputado": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.imputado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "pagos_sin_imputar.imputado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imputado_indicates_how_expensive_pagos_sin_imputars_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.imputado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_imputados"
+			        }
+			      ]
+			    },
+			    "comp_deuda_is_expensive": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.total": {
+			          "Target": {
+			            "Entity": "comp_deuda.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "comp_deuda.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "total_indicates_how_expensive_comp_deudas_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_totals"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_recibo": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.recibo": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.recibo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.recibo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_recibos"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_fechas"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_institucion": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.institucion": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.institucion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.institucion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_institucions"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_rec_original": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.rec_original": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.rec_original"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.rec_original"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_rec_originals"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.total": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_totals"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_pend_imputacion": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "pagos_sin_imputar.pend_imputacion": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.pend_imputacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.pend_imputacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_pend_imputacion"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_institucion": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.institucion": {
+			          "Target": {
+			            "Entity": "comp_deuda.institucion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.institucion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_institucions"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_comprobante": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.comprobante": {
+			          "Target": {
+			            "Entity": "comp_deuda.comprobante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.comprobante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_comprobantes"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_comp_asociado": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.comp_asociado": {
+			          "Target": {
+			            "Entity": "comp_deuda.comp_asociado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.comp_asociado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_comp_asociados"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_fecha_emisión": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_fecha_emisións"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_hon": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.hon": {
+			          "Target": {
+			            "Entity": "comp_deuda.hon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.hon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_hon"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_gasto": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.gasto": {
+			          "Target": {
+			            "Entity": "comp_deuda.gasto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.gasto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_gastos"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_impuesto": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.impuesto": {
+			          "Target": {
+			            "Entity": "comp_deuda.impuesto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.impuesto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_impuestos"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_total_aj": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.total_aj": {
+			          "Target": {
+			            "Entity": "comp_deuda.total_aj"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.total_aj"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_total_ajs"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_plazo_vancimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.plazo_vancimiento": {
+			          "Target": {
+			            "Entity": "comp_deuda.plazo_vancimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.plazo_vancimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_plazo_vancimientos"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_vto_comp": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.vto_comp": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_vto_comps"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_dias_vdo": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.dias_vdo": {
+			          "Target": {
+			            "Entity": "comp_deuda.dias_vdo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.dias_vdo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_dias_vdos"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_sin_imputacione": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "comp_deuda.sin_imputacione": {
+			          "Target": {
+			            "Entity": "comp_deuda.sin_imputacione"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.sin_imputacione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_sin_imputaciones"
+			        }
+			      ]
+			    },
+			    "medida_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.column": {
+			          "Target": {
+			            "Entity": "medida.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_columns"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_medida_suma_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "medida.suma_total": {
+			          "Target": {
+			            "Entity": "medida.suma_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "medida.suma_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_suma_total"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_medida_total_neto_pagos": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "medida.total_neto_pagos": {
+			          "Target": {
+			            "Entity": "medida.total_neto_pagos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "medida.total_neto_pagos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_total_neto_pagos"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_medida_total_neto_pagos": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "medida.total_neto_pagos": {
+			          "Target": {
+			            "Entity": "medida.total_neto_pagos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "medida.total_neto_pagos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_total_neto_pagos"
+			        }
+			      ]
+			    },
+			    "institucione_has_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "Instituciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        },
+			        "institucione.codigo": {
+			          "Target": {
+			            "Entity": "institucione.codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "institucione.codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_codigos"
+			        }
+			      ]
+			    },
+			    "institucione_has_descc": {
+			      "Binding": {
+			        "ConceptualEntity": "Instituciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        },
+			        "institucione.descc": {
+			          "Target": {
+			            "Entity": "institucione.descc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "institucione.descc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_desccs"
+			        }
+			      ]
+			    },
+			    "institucione_has_desca": {
+			      "Binding": {
+			        "ConceptualEntity": "Instituciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        },
+			        "institucione.desca": {
+			          "Target": {
+			            "Entity": "institucione.desca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "institucione.desca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_descas"
+			        }
+			      ]
+			    },
+			    "institucione_has_Pzo_Pago_plazo": {
+			      "Binding": {
+			        "ConceptualEntity": "Instituciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        },
+			        "institucione.Pzo_Pago_plazo": {
+			          "Target": {
+			            "Entity": "institucione.Pzo_Pago_plazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "institucione.Pzo_Pago_plazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_Pzo_Pago_plazos"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_has_institucione": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar"
+			          }
+			        },
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar"
+			            },
+			            "Object": {
+			              "Role": "institucione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pagos_sin_imputars_have_instituciones"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_pagos_sin_imputars"
+			        }
+			      ]
+			    },
+			    "comp_deuda_has_institucione": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda": {
+			          "Target": {
+			            "Entity": "comp_deuda"
+			          }
+			        },
+			        "institucione": {
+			          "Target": {
+			            "Entity": "institucione"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda"
+			            },
+			            "Object": {
+			              "Role": "institucione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comp_deudas_have_instituciones"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "institucione"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "instituciones_have_comp_deudas"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_jerarquía_de_fecha_has_pagos_sin_imputar_fecha_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.año": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_jerarquía_de_fecha_has_pagos_sin_imputar_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_jerarquía_de_fecha_has_pagos_sin_imputar_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.me": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_jerarquía_de_fecha_has_pagos_sin_imputar_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.día": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_año_has_pagos_sin_imputar_fecha_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.año": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.año"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.año"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_trimestre_has_pagos_sin_imputar_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.trimestre"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.me": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "pagos_sin_imputar_fecha_me_has_pagos_sin_imputar_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Pagos_sin_Imputar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pagos_sin_imputar.fecha.me": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.me"
+			          }
+			        },
+			        "pagos_sin_imputar.fecha.día": {
+			          "Target": {
+			            "Entity": "pagos_sin_imputar.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.día"
+			            },
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "pagos_sin_imputar.fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "pagos_sin_imputar.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_emisións_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_jerarquía_de_fecha_has_comp_deuda_fecha_emisión_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.año": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_jerarquía_de_fecha_has_comp_deuda_fecha_emisión_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_jerarquía_de_fecha_has_comp_deuda_fecha_emisión_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_jerarquía_de_fecha_has_comp_deuda_fecha_emisión_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.día": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_año_has_comp_deuda_fecha_emisión_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.año": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.año"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.año"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_trimestre_has_comp_deuda_fecha_emisión_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.trimestre"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_fecha_emisión_me_has_comp_deuda_fecha_emisión_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.fecha_emisión.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.me"
+			          }
+			        },
+			        "comp_deuda.fecha_emisión.día": {
+			          "Target": {
+			            "Entity": "comp_deuda.fecha_emisión.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.día"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.fecha_emisión.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.fecha_emisión.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me1"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp"
+			          }
+			        },
+			        "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vto_comps_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_jerarquía_de_fecha_has_comp_deuda_vto_comp_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.vto_comp.año": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_jerarquía_de_fecha_has_comp_deuda_vto_comp_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.vto_comp.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_jerarquía_de_fecha_has_comp_deuda_vto_comp_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.vto_comp.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_jerarquía_de_fecha_has_comp_deuda_vto_comp_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			          }
+			        },
+			        "comp_deuda.vto_comp.día": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_año_has_comp_deuda_vto_comp_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.año": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.año"
+			          }
+			        },
+			        "comp_deuda.vto_comp.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.año"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_trimestre_has_comp_deuda_vto_comp_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.trimestre": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.trimestre"
+			          }
+			        },
+			        "comp_deuda.vto_comp.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "comp_deuda_vto_comp_me_has_comp_deuda_vto_comp_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Comp_Deuda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "comp_deuda.vto_comp.me": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.me"
+			          }
+			        },
+			        "comp_deuda.vto_comp.día": {
+			          "Target": {
+			            "Entity": "comp_deuda.vto_comp.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.día"
+			            },
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "comp_deuda.vto_comp.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "comp_deuda.vto_comp.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me2"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

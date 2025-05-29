@@ -1,0 +1,118 @@
+table Pagos_sin_Imputar
+	lineageTag: a59236c1-2721-430c-9fc0-ad8aa6556d71
+
+	column Recibo
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a1fb43b-ec38-49c4-b7a3-54c1a8b9a189
+		summarizeBy: none
+		sourceColumn: Recibo
+
+		annotation SummarizationSetBy = User
+
+	column Fecha
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: df462478-fb71-495d-add2-a3fe1f5838c0
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variación
+			isDefault
+			relationship: 7cdfa7a3-1750-4223-8bb8-a01652a57986
+			defaultHierarchy: LocalDateTable_2d4ebe15-f403-4525-a331-5e62b78ca1be.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Institucion
+		dataType: string
+		lineageTag: 51886498-47d4-4d00-8cbe-6b20985a07e9
+		summarizeBy: none
+		sourceColumn: Institucion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rec_Original
+		dataType: int64
+		lineageTag: bb21bba1-fa2b-4b49-ab17-45d55f285c0b
+		summarizeBy: none
+		sourceColumn: Rec_Original
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total
+		dataType: double
+		lineageTag: 167b1233-f90e-453c-b10a-dd240606179c
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Imputado
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: bb9349f7-970e-4167-abea-648a0ca9e968
+		summarizeBy: sum
+		sourceColumn: Imputado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pend_Imputacion
+		dataType: double
+		lineageTag: f7e75e8b-2139-4a4f-ac8b-1d65a1d8d326
+		summarizeBy: sum
+		sourceColumn: Pend_Imputacion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Cod_Inst
+		dataType: int64
+		formatString: 0
+		lineageTag: b750fba9-5697-4762-9943-0b48080eefdb
+		summarizeBy: none
+		sourceColumn: Cod_Inst
+
+		annotation SummarizationSetBy = User
+
+	partition Pagos_sin_Imputar = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Pagos_Pend_Imputar\PAGOS DE INSTITUCIONES202505210940431.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Column1", type text}}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Tipo cambiado",16),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),
+				    #"Filas superiores quitadas1" = Table.Skip(#"Encabezados promovidos",1),
+				    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Filas superiores quitadas1",4),
+				    #"Dividir columna por posiciones" = Table.SplitColumn(#"Filas inferiores quitadas", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR", Splitter.SplitTextByPositions({0, 8, 17, 30, 37, 50, 63}), {"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.1", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.2", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.3", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.4", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.5", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.6", "  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.7"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Dividir columna por posiciones",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.1", "Recibo"}}),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Columnas con nombre cambiado",{{"Recibo", Int64.Type}}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Tipo cambiado1",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.2", "Fecha"}}),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Columnas con nombre cambiado1",{{"Fecha", type date}}),
+				    #"Columnas con nombre cambiado2" = Table.RenameColumns(#"Tipo cambiado2",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.3", "Institucion"}, {"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.4", "Rec_Original"}}),
+				    #"Tipo cambiado3" = Table.TransformColumnTypes(#"Columnas con nombre cambiado2",{{"Rec_Original", Int64.Type}}),
+				    #"Columnas con nombre cambiado3" = Table.RenameColumns(#"Tipo cambiado3",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.5", "Total"}}),
+				    #"Tipo cambiado4" = Table.TransformColumnTypes(#"Columnas con nombre cambiado3",{{"Total", type number}}),
+				    #"Columnas con nombre cambiado4" = Table.RenameColumns(#"Tipo cambiado4",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.6", "Imputado"}}),
+				    #"Tipo cambiado5" = Table.TransformColumnTypes(#"Columnas con nombre cambiado4",{{"Imputado", type number}}),
+				    #"Columnas con nombre cambiado5" = Table.RenameColumns(#"Tipo cambiado5",{{"  N.PAGO F.PAGO   INSTITUCION  P.ORIG        TOTAL     IMPUTADO    A IMPUTAR.7", "Pend_Imputacion"}}),
+				    #"Tipo cambiado6" = Table.TransformColumnTypes(#"Columnas con nombre cambiado5",{{"Pend_Imputacion", type number}}),
+				    #"Texto recortado" = Table.TransformColumns(#"Tipo cambiado6",{{"Institucion", Text.Trim, type text}}),
+				    #"Consultas combinadas" = Table.NestedJoin(#"Texto recortado", {"Institucion"}, Instituciones, {"DESCA"}, "ABMD_Instituciones", JoinKind.LeftOuter),
+				    #"Se expandió ABMD_Instituciones" = Table.ExpandTableColumn(#"Consultas combinadas", "ABMD_Instituciones", {"CODIGO"}, {"ABMD_Instituciones.CODIGO"}),
+				    #"Columnas con nombre cambiado6" = Table.RenameColumns(#"Se expandió ABMD_Instituciones",{{"ABMD_Instituciones.CODIGO", "Cod_Inst"}})
+				in
+				    #"Columnas con nombre cambiado6"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

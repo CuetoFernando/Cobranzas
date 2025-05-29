@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Comp_Deuda",
+          "nodeLineageTag": "550b36ae-2ce8-43f4-8b6c-196966655384",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 431,
+            "y": 0
+          },
+          "nodeIndex": "Pagos_sin_Imputar",
+          "nodeLineageTag": "a59236c1-2721-430c-9fc0-ad8aa6556d71",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 547,
+            "y": 517
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "bdeddae4-2d99-4a15-86a7-bff7a2b896d2",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 257,
+            "y": 337.5
+          },
+          "nodeIndex": "Instituciones",
+          "nodeLineageTag": "16957dd5-5ea7-4155-923f-1406fc180496",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

@@ -1,0 +1,264 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "170022780137707985698586234324.webp",
+            "path": "170022780137707985698586234324.webp",
+            "type": 100
+          },
+          {
+            "name": "Nuevo_Logo9221333283819015.jpeg",
+            "path": "Nuevo_Logo9221333283819015.jpeg",
+            "type": 100
+          },
+          {
+            "name": "WhatsApp_Image_2025-05-22_at_138112349570398374.jpeg",
+            "path": "WhatsApp_Image_2025-05-22_at_138112349570398374.jpeg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'WhatsApp Image 2025-05-22 at 11.01.10.jpeg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"WhatsApp_Image_2025-05-22_at_138112349570398374.jpeg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"74D\"}}}}}]}}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"e9c8e0ce6ea7b0d5c391\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Comp_Deuda\"}},\"Property\":\"Dias_Vdo\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+      "height": 720.00,
+      "name": "16ae30fe57349c89a50b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"596a2d2d9e81111d7486\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":332.43619489559165,\"z\":3000,\"width\":720,\"height\":196.2877030162413,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Pagos_sin_Imputar.Institucion\"},{\"queryRef\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pagos_sin_Imputar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Institucion\"},\"Name\":\"Pagos_sin_Imputar.Institucion\",\"NativeReferenceName\":\"Institucion\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0},\"Name\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\",\"NativeReferenceName\":\"Suma de Pend_Imputacion\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"138.13980944913152D\"}}}},\"selector\":{\"metadata\":\"Pagos_sin_Imputar.Institucion\"}}]}}}",
+          "filters": "[]",
+          "height": 196.29,
+          "width": 720.00,
+          "x": 0.00,
+          "y": 332.44,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"977b1510a490a6b04869\",\"layouts\":[{\"id\":0,\"position\":{\"x\":950.2735562310031,\"y\":184.80243161094225,\"z\":1000,\"width\":300.5471124620061,\"height\":150.7598784194529,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Instituciones.DESCA\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Instituciones\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"DESCA\"},\"Name\":\"Instituciones.DESCA\",\"NativeReferenceName\":\"DESCA\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Instituciones\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"DESCA\"}},\"Right\":{\"Literal\":{\"Value\":\"'osde'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}}}}]}}}",
+          "filters": "[{\"name\":\"a7f6a6e9e08714305c94\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Comp_Deuda\"}},\"Property\":\"Dias_Vdo\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 150.76,
+          "width": 300.55,
+          "x": 950.27,
+          "y": 184.80,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9c342995283827e59005\",\"layouts\":[{\"id\":0,\"position\":{\"x\":761.3793103448277,\"y\":528.8275862068966,\"z\":2000,\"width\":518.8965517241379,\"height\":149.79310344827587,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Total_Neto_Pagos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total_Neto_Pagos\"},\"Name\":\"Medidas.Total_Neto_Pagos\",\"NativeReferenceName\":\"Total_Neto_Pagos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total_Neto_Pagos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 518.90,
+          "x": 761.38,
+          "y": 528.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b5ec06805e2b9786a0ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":93.37386018237082,\"y\":0,\"z\":0,\"width\":856.8996960486322,\"height\":197.4468085106383,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Institucion\"},{\"queryRef\":\"Medidas.Suma_Total\"},{\"queryRef\":\"Comp_Deuda.Comprobante\"},{\"queryRef\":\"Comp_Deuda.Fecha emisión\"},{\"queryRef\":\"Comp_Deuda.Vto_Comp\"},{\"queryRef\":\"Sum(Comp_Deuda.Dias_Vdo)\"},{\"queryRef\":\"Comp_Deuda.Sin_Imputaciones\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"},\"Name\":\"Comp_Deuda.Institucion\",\"NativeReferenceName\":\"Institucion\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Suma_Total\"},\"Name\":\"Medidas.Suma_Total\",\"NativeReferenceName\":\"Suma_Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Comprobante\"},\"Name\":\"Comp_Deuda.Comprobante\",\"NativeReferenceName\":\"Comprobante\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Fecha emisión\"}},\"Function\":3},\"Name\":\"Comp_Deuda.Fecha emisión\",\"NativeReferenceName\":\"Fecha emisión\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"},\"Name\":\"Comp_Deuda.Vto_Comp\",\"NativeReferenceName\":\"Vto_Comp\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Dias_Vdo\"},\"Name\":\"Sum(Comp_Deuda.Dias_Vdo)\",\"NativeReferenceName\":\"Dias_Vdo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sin_Imputaciones\"},\"Name\":\"Comp_Deuda.Sin_Imputaciones\",\"NativeReferenceName\":\"Sin_Imputaciones1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Fecha emisión\"}},\"Function\":3}}}]},\"columnProperties\":{\"Comp_Deuda.Fecha emisión\":{\"displayName\":\"Fecha emisión\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnFormatting\":[{\"properties\":{\"styleValues\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Fecha emisión\"}}]}}}",
+          "filters": "[]",
+          "height": 197.45,
+          "width": 856.90,
+          "x": 93.37,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Documentacion",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "179e24bc2b6e55894b2a",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"fb221e170d4073cea8a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.350404312668463,\"y\":0,\"z\":0,\"width\":1156.6576819407007,\"height\":720.2156334231805,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"El presente trabaja con dos Archivos que se descargan del GH\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"1) CC de Instituciones / Consultas / \"},{\"value\":\"Composición de Deuda de Instituciones\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\\t\"}]},{\"textRuns\":[{\"value\":\"\\ta) Criterio a Definir: \"},{\"value\":\"Fecha desde 01/01/2020. // Hasta: Fecha del día. // Facturas saldadas: N (en instituciones NO se toca Nada)\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\\tb) Resultados a Definir: \"},{\"value\":\"Presentar detalle de comprobantes: S // Presentar totales por Estado: S // Solo Facturas de Reliquidación: N\",\"textStyle\":{\"fontWeight\":\"bold\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"2) \"},{\"value\":\"CC de Instituciones / Consultas / \",\"textStyle\":{\"fontSize\":\"13.3333px\"}},{\"value\":\"Pagos de Instituciones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"13.3333px\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\\ta) \"},{\"value\":\"Criterio a Definir: \",\"textStyle\":{\"fontSize\":\"13.3333px\"}},{\"value\":\"Fecha desde 01/01/2020. // Hasta: Fecha del día. // Pagos imputados: N (en adelante NO se toca Nada)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"13.3333px\"}}]},{\"textRuns\":[{\"value\":\"\\tb) \"},{\"value\":\"Resultados a Definir: \",\"textStyle\":{\"fontSize\":\"13.3333px\"}},{\"value\":\" \"},{\"value\":\"(NO se toca Nada)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"13.3333px\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 720.22,
+          "width": 1156.66,
+          "x": 10.35,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Duplicado de Página 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"e9c8e0ce6ea7b0d5c391\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Comp_Deuda\"}},\"Property\":\"Dias_Vdo\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+      "height": 720.00,
+      "name": "2f3d12712ed02129278e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4cc687b496ad5e7d5468\",\"layouts\":[{\"id\":0,\"position\":{\"x\":93.37386018237082,\"y\":0,\"z\":0,\"width\":856.8996960486322,\"height\":197.4468085106383,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Comp_Deuda.Institucion\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Suma_Total\"}],\"Columns\":[{\"queryRef\":\"Comp_Deuda.Vto_Comp.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"Comp_Deuda.Vto_Comp.Variación.Jerarquía de fechas.Mes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"},\"Name\":\"Comp_Deuda.Institucion\",\"NativeReferenceName\":\"Institucion\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Suma_Total\"},\"Name\":\"Medidas.Suma_Total\",\"NativeReferenceName\":\"Suma_Total\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Vto_Comp\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"Comp_Deuda.Vto_Comp.Variación.Jerarquía de fechas.Año\",\"NativeReferenceName\":\"Vto_Comp Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"Vto_Comp\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"Comp_Deuda.Vto_Comp.Variación.Jerarquía de fechas.Mes\",\"NativeReferenceName\":\"Vto_Comp Mes\"}]},\"columnProperties\":{\"Comp_Deuda.Fecha emisión\":{\"displayName\":\"Fecha emisión\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{}}],\"columnFormatting\":[{\"properties\":{\"styleValues\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Fecha emisión\"}}]}}}",
+          "filters": "[]",
+          "height": 197.45,
+          "width": 856.90,
+          "x": 93.37,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5c5ffd5da55c0c598391\",\"layouts\":[{\"id\":0,\"position\":{\"x\":950,\"y\":336,\"width\":301,\"height\":150,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Vto_Comp\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"},\"Name\":\"Comp_Deuda.Vto_Comp\",\"NativeReferenceName\":\"Vto_Comp\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 301.00,
+          "x": 950.00,
+          "y": 336.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"9742a8959c9c010954dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":93,\"y\":237,\"width\":720,\"height\":197,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Pagos_sin_Imputar.Institucion\"},{\"queryRef\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pagos_sin_Imputar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Institucion\"},\"Name\":\"Pagos_sin_Imputar.Institucion\",\"NativeReferenceName\":\"Institucion\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0},\"Name\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\",\"NativeReferenceName\":\"Suma de Pend_Imputacion\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"138.13980944913152D\"}}}},\"selector\":{\"metadata\":\"Pagos_sin_Imputar.Institucion\"}}]}}}",
+          "filters": "[]",
+          "height": 197.00,
+          "width": 720.00,
+          "x": 93.00,
+          "y": 237.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b4828307edb72ce55b9d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":950.2735562310031,\"y\":184.80243161094225,\"z\":1000,\"width\":300.5471124620061,\"height\":150.7598784194529,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Instituciones.DESCA\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Instituciones\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"DESCA\"},\"Name\":\"Instituciones.DESCA\",\"NativeReferenceName\":\"DESCA\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Instituciones\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"DESCA\"}},\"Right\":{\"Literal\":{\"Value\":\"'ospep'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Instituciones\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"DESCA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'OSPEPBA'\"}}]]}}}]}}}}]}}}",
+          "filters": "[{\"name\":\"a7f6a6e9e08714305c94\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Comp_Deuda\"}},\"Property\":\"Dias_Vdo\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 150.76,
+          "width": 300.55,
+          "x": 950.27,
+          "y": 184.80,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d9f4a2020193e520d0b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":420.1823708206687,\"y\":487.2948328267477,\"z\":2000,\"width\":519.3920972644377,\"height\":149.7872340425532,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Institucion\"},{\"queryRef\":\"Medidas.Total_Neto_Pagos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total_Neto_Pagos\"},\"Name\":\"Medidas.Total_Neto_Pagos\",\"NativeReferenceName\":\"Total_Neto_Pagos\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"},\"Name\":\"Comp_Deuda.Institucion\",\"NativeReferenceName\":\"Institucion\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 519.39,
+          "x": 420.18,
+          "y": 487.29,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'1700227801377.webp'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"170022780137707985698586234324.webp\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fill'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"74D\"}}}}}]}}",
+      "displayName": "Duplicado de Página 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"e9c8e0ce6ea7b0d5c391\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Comp_Deuda\"}},\"Property\":\"Dias_Vdo\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+      "height": 720.00,
+      "name": "e43657f2990cbca06831",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2bfaa136ce2542a3c052\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":391.59029649595686,\"z\":7000,\"width\":231.15902964959568,\"height\":211.32075471698113,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Institucion\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"},\"Name\":\"Comp_Deuda.Institucion\",\"NativeReferenceName\":\"Institucion\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-01-01T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-05-04T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"date\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Institución'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#003366'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 211.32,
+          "width": 231.16,
+          "x": 0.00,
+          "y": 391.59,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"37b3d7694c3b32de9156\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.25441329179647,\"y\":27.91277258566978,\"z\":5000,\"width\":178.11007268951195,\"height\":98.35929387331257,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Nuevo_Logo9221333283819015.jpeg\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 98.36,
+          "width": 178.11,
+          "x": 25.25,
+          "y": 27.91,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4b411853e2840aab00e5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":288.08625336927224,\"y\":65.55256064690026,\"z\":0,\"width\":934.9865229110512,\"height\":393.3153638814016,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Institucion\"},{\"queryRef\":\"Medidas.Suma_Total\"},{\"queryRef\":\"Comp_Deuda.Comprobante\"},{\"queryRef\":\"Comp_Deuda.Fecha emisión\"},{\"queryRef\":\"Comp_Deuda.Vto_Comp\"},{\"queryRef\":\"Sum(Comp_Deuda.Dias_Vdo)\"},{\"queryRef\":\"Comp_Deuda.Sin_Imputaciones\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Institucion\"},\"Name\":\"Comp_Deuda.Institucion\",\"NativeReferenceName\":\"Institucion\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Suma_Total\"},\"Name\":\"Medidas.Suma_Total\",\"NativeReferenceName\":\"Importe\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Comprobante\"},\"Name\":\"Comp_Deuda.Comprobante\",\"NativeReferenceName\":\"Comprobante\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Fecha emisión\"}},\"Function\":3},\"Name\":\"Comp_Deuda.Fecha emisión\",\"NativeReferenceName\":\"Fecha emisión\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"},\"Name\":\"Comp_Deuda.Vto_Comp\",\"NativeReferenceName\":\"Vto_Comp\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Dias_Vdo\"},\"Name\":\"Sum(Comp_Deuda.Dias_Vdo)\",\"NativeReferenceName\":\"Dias_Vdo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sin_Imputaciones\"},\"Name\":\"Comp_Deuda.Sin_Imputaciones\",\"NativeReferenceName\":\"Sin_Imputaciones1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"}}}]},\"columnProperties\":{\"Comp_Deuda.Fecha emisión\":{\"displayName\":\"Fecha emisión\"},\"Medidas.Suma_Total\":{\"displayName\":\"Importe\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}}}}],\"columnFormatting\":[{\"properties\":{\"styleValues\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Fecha emisión\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sum(Comp_Deuda.Dias_Vdo)\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Comprobante\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Vto_Comp\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Sin_Imputaciones\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Institucion\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.25717820185406D\"}}}},\"selector\":{\"metadata\":\"Sum(Comp_Deuda.Dias_Vdo)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"126.50134573463492D\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Institucion\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"132.73854713033234D\"}}}},\"selector\":{\"metadata\":\"Medidas.Suma_Total\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"126.21293800539084D\"}}}},\"selector\":{\"metadata\":\"Comp_Deuda.Comprobante\"}}],\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"fontColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.5}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 393.32,
+          "width": 934.99,
+          "x": 288.09,
+          "y": 65.55,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"62292468c1887501123a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":815.0943396226414,\"y\":484.74393530997304,\"z\":8000,\"width\":407.9784366576819,\"height\":215.63342318059298,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pagos_sin_Imputar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0},\"Name\":\"Sum(Pagos_sin_Imputar.Pend_Imputacion)\",\"NativeReferenceName\":\"Suma de Pend_Imputacion\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Pend_Imputacion\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Recibos Pendientes imputación'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 215.63,
+          "width": 407.98,
+          "x": 815.09,
+          "y": 484.74,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"72a612c704bb7068078b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36,\"y\":132,\"z\":3000,\"width\":160,\"height\":36,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filtros Disponibles\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.00,
+          "width": 160.00,
+          "x": 36.00,
+          "y": 132.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"889c6d7a1a1016ab7790\",\"layouts\":[{\"id\":0,\"position\":{\"x\":288.08625336927224,\"y\":484.74393530997304,\"z\":1000,\"width\":407.9784366576819,\"height\":215.63342318059298,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Suma_Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Suma_Total\"},\"Name\":\"Medidas.Suma_Total\",\"NativeReferenceName\":\"Suma_Total\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Suma_Total\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Facturas Pendientes'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#222C66'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 215.63,
+          "width": 407.98,
+          "x": 288.09,
+          "y": 484.74,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ae21692212430ed640a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":231.15902964959568,\"y\":0,\"z\":6000,\"width\":1048.8409703504042,\"height\":73.31536388140161,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte Saldos Cuentas Corrientes\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\",\"fontSize\":\"32pt\",\"textDecoration\":\"underline\",\"color\":\"#222c66\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.32,
+          "width": 1048.84,
+          "x": 231.16,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"b238cb843c6ae35a0184\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":231.15902964959568,\"height\":720.2156334231805,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#222C66'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#003366'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.22,
+          "width": 231.16,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"da24b4a0373080669ca0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":180.26954177897574,\"z\":4000,\"width\":231.15902964959568,\"height\":211.32075471698113,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Comp_Deuda.Vto_Comp\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"},\"Name\":\"Comp_Deuda.Vto_Comp\",\"NativeReferenceName\":\"Vto_Comp\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2018-01-01T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-08-04T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Comp_Deuda\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2018-01-01T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Vto_Comp\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2025-08-05T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"date\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#003366'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 211.32,
+          "width": 231.16,
+          "x": 0.00,
+          "y": 180.27,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
