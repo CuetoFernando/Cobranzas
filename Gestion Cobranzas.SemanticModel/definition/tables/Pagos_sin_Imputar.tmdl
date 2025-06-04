@@ -46,13 +46,12 @@ table Pagos_sin_Imputar
 
 	column Total
 		dataType: double
+		formatString: #,0.00
 		lineageTag: 167b1233-f90e-453c-b10a-dd240606179c
 		summarizeBy: sum
 		sourceColumn: Total
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Imputado
 		dataType: double
@@ -65,13 +64,12 @@ table Pagos_sin_Imputar
 
 	column Pend_Imputacion
 		dataType: double
+		formatString: #,0.00
 		lineageTag: f7e75e8b-2139-4a4f-ac8b-1d65a1d8d326
 		summarizeBy: sum
 		sourceColumn: Pend_Imputacion
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Cod_Inst
 		dataType: int64

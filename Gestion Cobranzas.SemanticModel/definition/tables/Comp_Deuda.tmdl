@@ -104,7 +104,7 @@ table Comp_Deuda
 			IF(RELATED(Instituciones[Pzo_Pago.Plazos ])<>BLANK(),RELATED(Instituciones[Pzo_Pago.Plazos ]), 45)
 		formatString: 0
 		lineageTag: 62cf0006-7aec-42a4-a975-7c8bb99dbe22
-		summarizeBy: sum
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
@@ -141,6 +141,18 @@ table Comp_Deuda
 			IF(CALCULATE(COUNTROWS(Comp_Deuda), ALLEXCEPT(Comp_Deuda, Comp_Deuda[Comprobante]))>1, "Con Movimientos", "Sin Movimientios")
 		lineageTag: 856bb4be-9179-413d-bcc0-f6015d1b53a9
 		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dias_Vdo1 =
+			
+			(TODAY()-Comp_Deuda[Vto_Comp])
+		dataType: int64
+		formatString: 0
+		lineageTag: d79d6d24-d9c5-4356-8749-cf0f8553ffd1
+		summarizeBy: sum
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 

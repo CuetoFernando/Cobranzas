@@ -23,3 +23,28 @@ relationship 1ed23d34-59a2-b7aa-c836-5c4f834d6350
 	fromColumn: Pagos_sin_Imputar.Cod_Inst
 	toColumn: Instituciones.CODIGO
 
+relationship 605113fe-badd-4313-9b91-b81958318779
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim_Calendar DAX'.Date
+	toColumn: LocalDateTable_7a2d9430-5d73-479b-9ea3-6f6b59936e57.Date
+
+relationship e0e47dfa-7094-4259-936d-f535b522cd4e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim_Calendar DAX'.CierreSemana
+	toColumn: LocalDateTable_ac4c9d2e-c37d-4713-b488-762488186f79.Date
+
+relationship b75eecdc-c15d-470c-abf7-29fa7dbcf09d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim_Calendar DAX'.InicioMes
+	toColumn: LocalDateTable_0b2e6268-af85-425c-bd00-3555152f121d.Date
+
+relationship 5a045e49-8453-44f5-ae44-6afc63785dfb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim_Calendar DAX'.FinMes
+	toColumn: LocalDateTable_129a9ab2-6c22-4064-9807-791762395dc2.Date
+
+relationship fac63bb6-7e15-0cef-5e3b-cd183dbad863
+	crossFilteringBehavior: bothDirections
+	fromColumn: Comp_Deuda.Plazo_Vancimiento
+	toColumn: 'Dim_Calendar DAX'.Date
+

@@ -49,13 +49,26 @@
         },
         {
           "location": {
-            "x": 257,
-            "y": 337.5
+            "x": 0,
+            "y": 455.5
           },
           "nodeIndex": "Instituciones",
-          "nodeLineageTag": "16957dd5-5ea7-4155-923f-1406fc180496",
+          "nodeLineageTag": "91a17082-72bb-4762-8e99-94615250520b",
           "size": {
             "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 384,
+            "y": 288.5
+          },
+          "nodeIndex": "Dim_Calendar DAX",
+          "nodeLineageTag": "ed0d88d7-d3a0-4ae4-a6d4-51dddc3d2196",
+          "size": {
+            "height": 200,
             "width": 234
           },
           "zIndex": 0

@@ -35,6 +35,22 @@ table Instituciones
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Pzo_Pago.Tipo'
+		dataType: string
+		lineageTag: 137168c6-1b0d-42ff-8e48-3e456c14973f
+		summarizeBy: none
+		sourceColumn: Pzo_Pago.Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prestataria_Tipo =
+			
+			if(Instituciones[Pzo_Pago.Tipo]=BLANK(), "Otros", Instituciones[Pzo_Pago.Tipo])
+		lineageTag: 4bf4c1ab-930f-4246-af41-7dc3c0bcd2f6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Instituciones = m
 		mode: import
 		source =
@@ -48,7 +64,7 @@ table Instituciones
 				    #"Filas filtradas" = Table.SelectRows(#"Texto recortado", each true),
 				    #"Duplicados quitados" = Table.Distinct(#"Filas filtradas", {"DESCA"}),
 				    #"Consultas combinadas" = Table.NestedJoin(#"Duplicados quitados", {"CODIGO"}, Pzo_Pago, {"Cod"}, "Pzo_Pago", JoinKind.LeftOuter),
-				    #"Se expandió Pzo_Pago" = Table.ExpandTableColumn(#"Consultas combinadas", "Pzo_Pago", {"Plazos "}, {"Pzo_Pago.Plazos "})
+				    #"Se expandió Pzo_Pago" = Table.ExpandTableColumn(#"Consultas combinadas", "Pzo_Pago", {"Tipo", "Plazos "}, {"Pzo_Pago.Tipo", "Pzo_Pago.Plazos "})
 				in
 				    #"Se expandió Pzo_Pago"
 
