@@ -73,12 +73,24 @@ table Pagos_sin_Imputar
 
 	column Cod_Inst
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: b750fba9-5697-4762-9943-0b48080eefdb
 		summarizeBy: none
 		sourceColumn: Cod_Inst
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = User
+
+	column Cod-Inst_1 =
+			
+			IF(Pagos_sin_Imputar[Cod_Inst]=768, 767, Pagos_sin_Imputar[Cod_Inst])
+		formatString: 0
+		lineageTag: 16cdcafa-cd35-48b9-9850-b43c7a6b3c18
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition Pagos_sin_Imputar = m
 		mode: import

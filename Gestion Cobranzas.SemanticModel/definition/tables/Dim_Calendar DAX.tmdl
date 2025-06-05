@@ -2,7 +2,7 @@ table 'Dim_Calendar DAX'
 	lineageTag: ed0d88d7-d3a0-4ae4-a6d4-51dddc3d2196
 
 	column Date
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 05b2ea48-1c97-48da-b5be-f1bbeaa3a269
 		summarizeBy: none
 		isNameInferred
@@ -102,7 +102,7 @@ table 'Dim_Calendar DAX'
 		annotation SummarizationSetBy = Automatic
 
 	column CierreSemana
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 3f1b9ad9-4408-497b-ad5c-ab5814667515
 		summarizeBy: none
 		isNameInferred

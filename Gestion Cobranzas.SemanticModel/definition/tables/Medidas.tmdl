@@ -13,6 +13,18 @@ table Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure %Vencido =
+			
+			sum(Comp_Deuda[$ Vencido])/[Suma_Total]
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 1227358e-efa4-49ec-a974-7fcb7967a456
+
+	measure %NoVencido =
+			
+			sum(Comp_Deuda[$No_Vencido])/[Suma_Total]
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 200facd4-3b45-493d-8fa3-2063b1a30c00
+
 	column Column
 		formatString: 0
 		lineageTag: ab2a73a7-e19f-4e00-b47f-9dc07aed1ad0

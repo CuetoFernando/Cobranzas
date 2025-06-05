@@ -20,7 +20,6 @@ ref table DateTableTemplate_0e18c6a5-f3b2-4af5-ad3f-e5235e306982
 ref table Comp_Deuda
 ref table LocalDateTable_11e5f011-a4fb-4adb-a55f-267d5ec7e984
 ref table Medidas
-ref table LocalDateTable_c104a9c0-8782-4b31-adb5-423b8ce19924
 ref table LocalDateTable_2d4ebe15-f403-4525-a331-5e62b78ca1be
 ref table Instituciones
 ref table 'Dim_Calendar DAX'

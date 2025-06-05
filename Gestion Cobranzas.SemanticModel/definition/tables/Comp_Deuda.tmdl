@@ -104,7 +104,7 @@ table Comp_Deuda
 			IF(RELATED(Instituciones[Pzo_Pago.Plazos ])<>BLANK(),RELATED(Instituciones[Pzo_Pago.Plazos ]), 45)
 		formatString: 0
 		lineageTag: 62cf0006-7aec-42a4-a975-7c8bb99dbe22
-		summarizeBy: none
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
@@ -117,11 +117,6 @@ table Comp_Deuda
 		formatString: Short Date
 		lineageTag: 231fc54f-b1f2-4cc9-a978-4bba6e0cdc65
 		summarizeBy: none
-
-		variation Variación
-			isDefault
-			relationship: 7554d5e2-592a-4333-9291-910c14839124
-			defaultHierarchy: LocalDateTable_c104a9c0-8782-4b31-adb5-423b8ce19924.'Jerarquía de fechas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -155,6 +150,28 @@ table Comp_Deuda
 		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
+
+	column '$ Vencido' = ```
+			
+			IF(TODAY()-Comp_Deuda[Vto_Comp]>=0, Comp_Deuda[Total_aj], BLANK())
+			
+			```
+		lineageTag: 3fd4b958-288d-48a3-a9ce-880944ff87dd
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column $No_Vencido =
+			
+			Comp_Deuda[Total_aj]-Comp_Deuda[$ Vencido]
+		lineageTag: b8186478-0be3-4202-a18d-90acb59451cb
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition Comp_Deuda = m
 		mode: import
