@@ -1,6 +1,6 @@
 expression Pzo_Pago =
 		let
-		    Origen = Excel.Workbook(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Prestatarias - Plazo de Pago.xlsx"), null, true),
+		    Origen = Excel.Workbook(File.Contents("H:\Mi unidad\Proyectos Compartidos\Gestion de Cobranzas\Prestatarias - Plazo de Pago.xlsx"), null, true),
 		    data8_Sheet = Origen{[Item="data8",Kind="Sheet"]}[Data],
 		    #"Encabezados promovidos" = Table.PromoteHeaders(data8_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Cod", Int64.Type}, {"Abreviatura", type text}, {"Tipo", type text}, {"Detalle", type text}, {"Plazos ", Int64.Type}})

@@ -84,7 +84,7 @@ table Pagos_sin_Imputar
 		mode: import
 		source =
 				let
-				    Origen = Csv.Document(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Pagos_Pend_Imputar\PAGOS DE INSTITUCIONES202505210940431.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Origen = Csv.Document(File.Contents("H:\Mi unidad\Proyectos Compartidos\Gestion de Cobranzas\Pagos_Pend_Imputar\PAGOS DE INSTITUCIONES202505210940431.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Column1", type text}}),
 				    #"Filas superiores quitadas" = Table.Skip(#"Tipo cambiado",16),
 				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),

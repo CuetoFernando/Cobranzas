@@ -161,7 +161,7 @@ table Comp_Deuda
 		source = ```
 				let
 				    // 1. Cargar archivo
-				    Origen = Csv.Document(File.Contents("C:\Users\Usuario\Desktop\Proyectos PBI Colon\Gestion_Cobranzas\Comp_Deuda\COMPOSICIÓN DE DEUDA DE INSTITUCIONES20250521091807.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Origen = Csv.Document(File.Contents("H:\Mi unidad\Proyectos Compartidos\Gestion de Cobranzas\Comp_Deuda\COMPOSICIÓN DE DEUDA DE INSTITUCIONES20250521091807.TXT"),[Delimiter=":", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Filas filtradas" = Table.SelectRows(Origen, each ([Column1] <> "" and [Column1] <> "-------------------------------------------------------------------------------------------------------")),
 				 
 				    TablaIndex = Table.AddIndexColumn(#"Filas filtradas", "Index", 0, 1, Int64.Type),
